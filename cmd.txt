@@ -1,0 +1,57 @@
+##dotnet cli commands
+dotnet --info
+dotnet --help
+dotnet new list
+mkdir/dir
+dotnet new sln
+dotnet new webapi -controllers -n API
+dotnet sln add API
+dotnet sln list
+dotnet run
+dotnet watch
+dotnet build, dotnet run, dotnet test, dotnet publish
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Designdotnet tool install -g dotnet-aspnet-codegenerator
+dotnet-aspnet-codegenerator controller -name PostsController -api -outDir Controllers
+
+
+##vscode extension
+nuget gallery
+material icon theme
+sqlite
+setting->autoclosebracket in vscode
+
+##trust localhost certificate
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
+
+##entity framework
+"ConnectionStrings": {
+    "HotelLisitngDbConnectionString": "Server=DHEERAJ\\SQLEXPRESS; Database=HostelListingApiDb; Trusted_Connection=true;MultipleActiveResultSets=True;TrustServerCertificate=True"
+  }
+dotnet tool install --global dotnet-ef --version 8.0.7
+dotnet ef migrations add InitialCreate -o Data/Migrations
+add-migration UpdateEntiy // update-database(Visual Studio)
+ef migrations remove
+dotnet ef database update
+
+##Creating angular project
+node -v
+npm install -g @angular/cli@18
+ng version
+ng new appName
+
+##npm dependencies
+ npm install ngx-bootstrap bootstrap font-awesome
+
+ ##certificate
+ https://github.com/FiloSottile/mkcert
+
+ ##angular commands
+ ng g c nav --dry-run
+ ng g c register
+ ng g c home --skip-tests
+ ng g s account
+ ng g s _services/account --skip-tests
+ ng g g _guards/auth
+ ng g interceptor _interceptors/error
+ 
